@@ -1,6 +1,53 @@
 // Typography
 // ========================================
 
+// Style
+
+.bold
+  font-weight: bold
+
+.regular
+  font-weight: normal
+
+.italic
+  font-style: italic
+
+.caps
+  text-transform: uppercase
+
+.align-left
+  text-align: left
+
+.align-center
+  text-align: center
+
+.align-right
+  text-align: right
+
+.justify
+  text-align: justify
+
+.text-decoration-none
+  text-decoration: none
+
+.nowrap
+  white-space: nowrap
+
+.break-word
+  word-wrap: break-word
+
+.list-style-none
+  list-style: none
+
+.underline
+  text-decoration: underline
+
+.truncate
+  max-width: 100%
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
 // Scale
 
 .s-giga
@@ -58,3 +105,6 @@
 @each $color, $i in $text-colors
   .text-#{$i},
     color: $color
+
+
+

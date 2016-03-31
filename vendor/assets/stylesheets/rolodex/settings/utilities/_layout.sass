@@ -14,38 +14,128 @@
 .group
   +group
 
-// Grid
-// ========================================
+// Gutters
 
-.grid
-  list-style: none
-  +rem(letter-spacing, -4px)
+.gutter
+  +bump(padding, gutters)
 
-.opera:-o-prefocus,
-.grid
-  +rem(word-spacing, -5px)
+.gutter-half
+  +bump(padding, gutters-half)
 
-.grid-col
-  display: inline-block
-  *display: inline
-  letter-spacing: normal
-  vertical-align: top
-  white-space: normal
-  zoom: 1
+// Baselines
 
-// Grid
+.b-step
+  padding: $baseline-step
 
-.grid-1-1
-  width: 100%
+.bt-step
+  padding-top: $baseline-step
 
-$columns: 12
+.bb-step
+  padding-bottom: $baseline-step
 
-// Counting down from 12, for 12 columns
-@while 1 <= $columns
-  
-  // Counting up to the given potential number of columns in a given row
-  @for $column from 1 to $columns
-    .grid-#{$column}-#{$columns}
-      width: ($column/$columns) * 100%
-    
-  $columns: $columns - 1
+.bl-step
+  padding-left: $baseline-step
+
+.br-step
+  padding-right: $baseline-step
+
+.b-x-small
+  padding: $baseline-x-small
+
+.bt-x-small
+  padding-top: $baseline-x-small
+
+.bb-x-small
+  padding-bottom: $baseline-x-small
+
+.bl-x-small
+  padding-left: $baseline-x-small
+
+.br-x-small
+  padding-right: $baseline-x-small
+
+.b-small
+  padding: $baseline-small
+
+.bt-small
+  padding-top: $baseline-small
+
+.bb-small
+  padding-bottom: $baseline-small
+
+.bl-small
+  padding-left: $baseline-small
+
+.br-small
+  padding-right: $baseline-small
+
+.b-base
+  padding: $baseline-base
+
+.bt-base
+  padding-top: $baseline-base
+
+.bb-base
+  padding-bottom: $baseline-base
+
+.bl-base
+  padding-left: $baseline-base
+
+.br-base
+  padding-right: $baseline-base
+
+.b-large
+  padding: $baseline-large
+
+.bt-large
+  padding-top: $baseline-large
+
+.bb-large
+  padding-bottom: $baseline-large
+
+.bl-large
+  padding-left: $baseline-large
+
+.br-large
+  padding-right: $baseline-large
+
+.b-x-large
+  padding: $baseline-x-large
+
+.bt-x-large
+  padding-top: $baseline-x-large
+
+.bb-x-large
+  padding-bottom: $baseline-x-large
+
+.bl-x-large
+  padding-left: $baseline-x-large
+
+.br-x-large
+  padding-right: $baseline-x-large
+
+.b-xx-large
+  padding: $baseline-xx-large
+
+.bt-xx-large
+  padding-top: $baseline-xx-large
+
+.bb-xx-large
+  padding-bottom: $baseline-xx-large
+
+.bl-xx-large
+  padding-left: $baseline-xx-large
+
+.br-xx-large
+  padding-right: $baseline-xx-large
+
+// Border radius
+
+.border-radius-base
+  +rem(border-radius, $border-radius-base)
+
+.border-radius-mini
+  +rem(border-radius, $border-radius-mini)
+
+.circle
+  border-radius: 50%
